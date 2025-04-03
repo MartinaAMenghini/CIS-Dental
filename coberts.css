@@ -1,0 +1,102 @@
+#coberturas {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#coberturas h1 {
+    font-weight: 700;
+    font-family: 'Lucida Sans';
+    font-size: 1.5rem;
+    font-style: oblique;
+    color: rgba(87, 63, 51, 0.966);
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 3rem;
+    }
+#coberturas.contenido{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
+    width: 100%;
+  
+}
+#coberturas article.contenido{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
+    width: 100%;
+}
+ 
+ #coberturas img {
+    width: 40%;
+    height: auto;
+    border-radius: 10%;
+    margin: 0%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 30%;
+
+ }
+ #coberturas ol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    width: 50%; 
+    margin: 0;
+    padding: 0;
+ }
+ #coberturas ol li {
+    color: rgb(70, 51, 41);
+    font-weight: 800;
+    font-family:'Lucida Sans';
+    font-style: oblique;
+    text-decoration:underline;
+    }
+#coberturas ol p{
+     color: rgba(201, 143, 112, 0.733);
+     font-family:'Lucida Sans';
+     font-style: oblique;
+    text-decoration:none;
+    font-weight: 500;
+    }
+    @media screen and (max-width: 1024px) {
+        #coberturas {
+            gap: 1.5rem; /* Espacio reducido para mejor ajuste */
+        }
+    
+        #coberturas h1 {
+            font-size: 1.4rem; /* Reduce un poco el tamaño del título */
+        }
+    
+        #coberturas .contenido {
+            gap: 1.5rem; /* Reduce el espacio entre los elementos */
+        }
+    
+        #coberturas article.contenido {
+            gap: 1rem; /* Espacio más compacto entre el contenido */
+        }
+    
+        #coberturas img {
+            width: 45%; /* Ajusta el tamaño sin hacerlo demasiado grande */
+            max-width: 350px;
+        }
+    
+        #coberturas ol {
+            width: 55%; /* Mantiene un buen ancho para la lista */
+        }
+    
+        #coberturas ol li {
+            font-size: 1rem; /* Reduce un poco el tamaño del texto */
+        }
+    
+        #coberturas ol p {
+            font-size: 0.95rem; /* Ajuste ligero en el tamaño del párrafo */
+        }
+    }

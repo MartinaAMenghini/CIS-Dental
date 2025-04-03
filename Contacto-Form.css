@@ -1,0 +1,141 @@
+.Contacto-Form {
+    width: 85%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border: 2px solid rgba(201, 143, 112, 0.733);
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+}
+
+.Contacto-Form h1 {
+    color: #5a3a29;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 5%;
+}
+.Contacto-Form h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(70, 51, 41);
+    margin-top: 5px;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: rgb(70, 51, 41);
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+    width: 90%;
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid rgba(201, 143, 112, 0.733);
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fdf8f5;
+    color: rgb(70, 51, 41);
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #5a3a29;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    background: #5a3a29;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: rgb(70, 51, 41);
+    transform: scale(1.05);
+}
+
+.contacto {
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(70, 51, 41);
+    font-size: 15px;
+}
+
+.contacto p {
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+.contacto picture img {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1024px) {
+    .Contacto-Form {
+        width: 90%; /* Aumenta el ancho para mayor adaptabilidad */
+        padding: 25px; /* Reduce un poco el padding */
+        margin: 50px auto; /* Ajusta el margen */
+    }
+
+    .Contacto-Form h1 {
+        font-size: 24px; /* Reduce el tamaño del título */
+        margin-left: 3%; /* Ajusta la posición del título */
+    }
+
+    form {
+        width: 100%;
+    }
+
+    label, input, textarea {
+        width: 95%; /* Aprovecha más el espacio disponible */
+        max-width: 450px; /* Reduce un poco el máximo */
+    }
+
+    textarea {
+        height: 100px; /* Reduce ligeramente la altura */
+    }
+
+    button {
+        padding: 10px 20px; /* Reduce un poco el tamaño del botón */
+        font-size: 15px;
+    }
+
+    #contacto picture img {
+        max-width: 400px; /* Reduce la imagen en pantallas más pequeñas */
+    }
+}

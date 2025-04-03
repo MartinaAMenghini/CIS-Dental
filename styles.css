@@ -1,0 +1,148 @@
+html body  {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajusta según la altura de tu header si es fijo */
+}
+body {
+    font-size: 16px;
+}
+body header nav a {
+    font-size: 18px;
+}
+body .products header h3{
+    font-size: 28px;
+}
+body .products header h2{
+    font-size: 28px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajusta según la altura de tu header si es fijo */
+}
+
+#login {
+    max-width: 500px; /* Antes estaba en 400px */
+    width: 90%; /* Se adapta en pantallas pequeñas */
+    margin: 100px auto; /* Más separación vertical */
+    padding: 30px; /* Más espacio dentro */
+    background: white;
+    border-radius: 15px; /* Bordes más suaves */
+    box-shadow: 0px 5px 15px rgba(87, 63, 51, 0.2);
+    text-align: center;
+    }
+
+
+#login h2 {
+    color: #5a3a29;
+    font-size: px;
+    margin-bottom: 15px;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login label {
+    text-align: left;
+    font-size: 20px;
+    color: #5a3a29;
+    font-weight: bold;
+}
+
+#login input {
+    padding: 8px;
+    border: 1px solid #c98f70;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#login button {
+    background-color: #5a3a29;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login button:hover {
+    background-color: #c98f70;
+}
+
+#login a {
+    display: block;
+    margin-top: 10px;
+    color: #5a3a29;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#login a:hover {
+    text-decoration: underline;
+}
+
+#registro {
+    max-width: 500px; /* Más ancho */
+    width: 90%;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(87, 63, 51, 0.2);
+    text-align: center;
+}
+
+/* Título del registro */
+#registro h2 {
+    font-size: 28px;
+    color: #5a3a29;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+#registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos de entrada */
+#registro input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid rgba(201, 143, 112, 0.733);
+    border-radius: 8px;
+}
+
+/* Botón */
+#registro button {
+    background: #5a3a29;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#registro button:hover {
+    background: rgba(201, 143, 112, 0.733);
+}
+
+/* Enlace para volver */
+#registro a {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #5a3a29;
+    text-decoration: none;
+}
+
+#registro a:hover {
+    text-decoration: underline;
+}

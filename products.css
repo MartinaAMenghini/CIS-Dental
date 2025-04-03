@@ -1,0 +1,123 @@
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding:1rem;
+    gap: 1rem;
+}
+.products header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+
+}
+.products header h2 {
+    font-weight: 700;
+    font-family: Cormorant Garamond;
+    font-size: 2rem;
+    font-style: oblique;
+    color: rgba(87, 63, 51, 0.966);
+
+}
+.products header h3 {
+    font-weight: 700;
+    font-family: Cormorant Garamond;
+    font-size: 3rem;
+    font-style: oblique;
+    text-align: left;
+    color: rgba(87, 63, 51, 0.966);
+    }
+.products header h3::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 5px;
+        background-color: rgb(70, 51, 41);
+        margin-top: 5px;
+        text-align: left;
+        margin-left: 0;
+        background-image: linear-gradient(to right, rgba(70, 51, 41, 1), rgba(201, 143, 112, 0.733));
+
+        
+    }
+.products > ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 0.5rem;
+
+}
+.products > ul > li {
+    padding: 1rem;
+    text-align: center;
+    max-width: 400px;
+    flex: 1 1 calc(33.33% - 2rem);
+
+}
+.products  ul li.tratamiento picture {
+    width: 300%;     
+    height: auto; 
+    border-radius: 50%;
+    max-width: 300px; 
+   
+}
+.products ul  li.tratamiento picture img {
+    width: 300%; 
+    height: auto; 
+    border-radius: 50%;
+    max-width: 300px;
+    outline: 3px dotted rgb(196, 144, 116); /* Borde con puntos */
+    outline-offset: 10px; /* Distancia entre la imagen y el borde de puntos */
+   
+}
+.products ul li .tratamiento picture img ::before {
+    content: "";
+    position: absolute;
+    width: 220px; /* Un poco más grande que la imagen */
+    height: 110px; /* Mitad de la altura */
+    border-top: 3px dotted rgb(70, 51, 41); /* Solo borde superior */
+    border-radius: 50%;
+    top: -10px; /* Ajustar la posición */
+    left: -10px; 
+    
+}
+
+.products ul  li.tratamiento h3 {
+    color: rgba(87, 63, 51, 0.966);
+    font-family:Cormorant Garamond;
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+    font-style: unset;
+}
+@media screen and (max-width: 1024px) {
+    .products > ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .products > ul > li {
+        flex: 1 1 calc(50% - 2rem); /* Se reducen a 2 columnas */
+    }
+
+    .products header h2 {
+        font-size: 1.8rem;
+    }
+
+    .products header h3 {
+        font-size: 2.8rem;
+    }
+
+    .products ul li.tratamiento picture img {
+        max-width: 250px; /* Se ajusta el tamaño de las imágenes */
+    }
+}

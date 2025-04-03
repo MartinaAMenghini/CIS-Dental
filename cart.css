@@ -1,0 +1,82 @@
+.cart {
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: start;
+align-content: start;
+gap: 2rem;
+}
+.cart h2 {
+    font-weight: 700;
+    font-family: 'Lucida Sans';
+    font-size: 1.5rem;
+    font-style: oblique;
+    color: rgba(87, 63, 51, 0.966);
+    gap: 1rem;
+    display: block;
+    width: 100%;
+}
+.cart h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(70, 51, 41);
+    margin-top: 5px;
+    background-image: linear-gradient(to right, rgba(70, 51, 41, 1), rgba(201, 143, 112, 0.733));
+}
+.cart article.profesionales {
+    width: 100%;
+    height: auto; 
+    border-radius: 30%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;   
+    }
+.cart article.profesionales img{
+    width: 100%; 
+    height: auto; 
+    border-radius: 30%;
+    max-width: 300px;
+}
+.cart article.profesionales h3 {
+    color: rgba(70, 51, 41, 0.966);
+    font-family:'Lucida Sans';
+    font-style: oblique;
+    text-decoration: none;
+    text-decoration:underline;
+    font-size: 18px;
+}
+
+.cart article.profesionales p {
+    font-family:'Lucida Sans';
+    text-decoration: none;
+    color: rgba(119, 82, 63, 0.733);
+    font-size: 18px;
+}
+.cart {
+    width: 100%; /* Se expande al 100% */
+    justify-content: center; /* Centra el contenido */
+    gap: 1.5rem; /* Espaciado reducido */
+}
+
+.cart h2 {
+    font-size: 1.3rem; /* Reduce el tamaño del título */
+}
+
+.cart article.profesionales {
+    max-width: 350px; /* Reduce el ancho */
+}
+
+.cart article.profesionales img {
+    max-width: 250px; /* Ajusta el tamaño de las imágenes */
+}
+
+.cart article.profesionales h3 {
+    font-size: 16px; /* Reduce el tamaño de los nombres */
+}
+
+.cart article.profesionales p {
+    font-size: 16px; /* Reduce el tamaño del texto */
+}
+
